@@ -12,11 +12,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://exchange.goosedefi.com/',
+        href: 'https://exchange.rockswap.finance/',
       },
       {
         label: 'Liquidity',
-        href: 'https://exchange.goosedefi.com/#/pool',
+        href: 'https://exchange.rockswap.finance/#/pool',
       },
     ],
   },
@@ -26,9 +26,9 @@ const config: MenuEntry[] = [
     href: '/farms',
   },
   {
-    label: 'Nests',
+    label: 'Mining',
     icon: 'PoolIcon',
-    href: '/nests',
+    href: '/mining',
   },
   // {
   //   label: 'Pools',
@@ -51,6 +51,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'PancakeSwap',
+        // TODO: Replace this address with our token
         href: 'https://pancakeswap.info/token/0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6',
       },
       {
@@ -72,8 +73,16 @@ const config: MenuEntry[] = [
     icon: 'MoreIcon',
     items: [
       {
+        label: 'Roadmap',
+        href: 'https://github.com/rockswapfinance/',
+      },
+      {
+        label: 'FAQs',
+        href: 'https://github.com/rockswapfinance/',
+      },
+      {
         label: 'Github',
-        href: 'https://github.com/goosedefi/',
+        href: 'https://github.com/rockswapfinance/',
       },
       {
         label: 'Docs',
@@ -81,7 +90,7 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Blog',
-        href: 'https://goosefinance.medium.com/',
+        href: 'https://rockswap.medium.com/',
       },
     ],
   },
