@@ -62,9 +62,7 @@ const Home: React.FC = () => {
         <Heading as="h1" size="xl" mb="24px" color="primary">
           Rockswap
         </Heading>
-        <Text>
-          The most robust yield-farm on Binance Smart Chain.
-        </Text>
+        <Text>The most robust yield-farm on Binance Smart Chain.</Text>
       </Hero>
       <div>
         <Cards>

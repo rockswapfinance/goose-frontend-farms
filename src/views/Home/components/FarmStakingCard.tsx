@@ -73,16 +73,12 @@ const FarmedStakingCard = () => {
         </Heading>
         <CardImage src="/images/rockswap/rock.svg" alt="cake logo" width={64} height={64} />
         <Block>
-          <Label>
-            ROCK to Harvest
-          </Label>
+          <Label>ROCK to Harvest</Label>
           <CakeHarvestBalance earningsSum={earningsSum} />
           <Label>~${(eggPrice * earningsSum).toFixed(2)}</Label>
         </Block>
         <Block>
-          <Label>
-            ROCK in Wallet
-          </Label>
+          <Label>ROCK in Wallet</Label>
           <CakeWalletBalance cakeBalance={cakeBalance} />
           <Label>~${(eggPrice * cakeBalance).toFixed(2)}</Label>
         </Block>
@@ -94,9 +90,7 @@ const FarmedStakingCard = () => {
               onClick={harvestAllFarms}
               fullWidth
             >
-              {pendingTx
-                ? 'Collecting ROCK'
-                : TranslateString(999, `Harvest all (${balancesWithValue.length})`)}
+              {pendingTx ? 'Collecting ROCK' : TranslateString(999, `Harvest all (${balancesWithValue.length})`)}
             </Button>
           ) : (
             <UnlockButton fullWidth />

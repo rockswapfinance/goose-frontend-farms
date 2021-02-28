@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux'
 import BigNumber from 'bignumber.js'
 import { useWallet } from '@binance-chain/bsc-use-wallet'
 import { provider } from 'web3-core'
-import { Image, Heading, Text} from '@pancakeswap-libs/uikit'
+import { Image, Heading, Text } from '@pancakeswap-libs/uikit'
 import { BLOCKS_PER_YEAR, CAKE_PER_BLOCK, CAKE_POOL_PID } from 'config'
 import FlexLayout from 'components/layout/Flex'
 import Page from 'components/layout/Page'
@@ -100,17 +100,10 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
           marginBottom: '20px',
         }}
       >
-        <img
-          src={`/images/rockswap/${tokenMode ? 'mining' : 'wheelbarrow'}.svg`}
-          alt="logo"
-          width="100px"
-        />
+        <img src={`/images/rockswap/${tokenMode ? 'mining' : 'wheelbarrow'}.svg`} alt="logo" width="100px" />
       </div>
       <Heading as="h1" size="lg" color="primary" style={{ textAlign: 'center' }}>
-        {tokenMode
-          ? 'Stake tokens to earn ROCK'
-          : 'Stake LP tokens to earn ROCK'
-        }
+        {tokenMode ? 'Stake tokens to earn ROCK' : 'Stake LP tokens to earn ROCK'}
       </Heading>
       <Text mb="50px" style={{ textAlign: 'center' }}>
         Deposit Fee will be used to buyback ROCK.
