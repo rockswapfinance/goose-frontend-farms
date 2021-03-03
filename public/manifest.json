@@ -1,11 +1,11 @@
 {
-  "short_name": "Goose Finance",
-  "name": "Goose Finance",
-  "description": "Farm EGG with LP Tokens",
+  "short_name": "RockSwap Finance",
+  "name": "RockSwap Finance",
+  "description": "Your go-to strongest defi yield farm on the Binance Smart Chain.",
   "icons": [
     {
-      "src": "favicon.ico",
-      "type": "image/x-icon",
+      "src": "logo.svg",
+      "type": "image/svg",
       "sizes": "256x256"
     }
   ],
