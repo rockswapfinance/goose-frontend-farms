@@ -16,9 +16,7 @@ ReactDOM.render(
 
 ReactDOM.render(
   <React.StrictMode>
-    <p>
-      soon&trade;
-    </p>
+    <p>soon&trade;</p>
   </React.StrictMode>,
   document.getElementById('root'),
 )
