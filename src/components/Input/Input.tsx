@@ -21,8 +21,9 @@ const Input: React.FC<InputProps> = ({ endAdornment, onChange, placeholder, star
 
 const StyledInputWrapper = styled.div`
   align-items: center;
-  background-color: ${(props) => props.theme.colors.input};
-  border-radius: ${(props) => props.theme.radii.default};
+  background: ${(props) => props.theme.card.background};
+  border-radius: 2px;
+  border: 3px solid ${(props) => props.theme.colors.borderColor};
   display: flex;
   height: 72px;
   padding: 0 ${(props) => props.theme.spacing[3]}px;

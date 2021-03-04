@@ -68,7 +68,7 @@ export const usePoolFromPid = (sousId): Pool => {
 // Prices
 
 export const usePriceBnbBusd = (): BigNumber => {
-  const pid = 2 // BUSD-BNB LP
+  const pid = 5 // BUSD-BNB LP
   const farm = useFarmFromPid(pid)
   return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO
 }
@@ -78,7 +78,7 @@ export const usePriceCakeBusd = (): BigNumber => {
   // const bnbPriceUSD = usePriceBnbBusd()
   // const farm = useFarmFromPid(pid)
   // return farm.tokenPriceVsQuote ? bnbPriceUSD.times(farm.tokenPriceVsQuote) : ZERO
-  const pid = 0 // ROCK-BUSD LP
+  const pid = 4 // ROCK-BUSD LP
   const farm = useFarmFromPid(pid)
   return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO
 }
@@ -95,6 +95,8 @@ export const useTotalValue = (): BigNumber => {
       if (farm.quoteTokenSymbol === QuoteToken.BNB) {
         val = bnbPrice.times(farm.lpTotalInQuoteToken)
       } else if (farm.quoteTokenSymbol === QuoteToken.CAKE) {
+        val = cakePrice.times(farm.lpTotalInQuoteToken)
+      } else if (farm.quoteTokenSymbol === QuoteToken.ROCK) {
         val = cakePrice.times(farm.lpTotalInQuoteToken)
       } else {
         val = farm.lpTotalInQuoteToken
