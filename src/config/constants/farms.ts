@@ -334,7 +334,6 @@ const farms: FarmConfig[] = [
   {
     pid: 9,
     risk: 4,
-    isTokenOnly: true,
     lpSymbol: 'CAKE',
     lpAddresses: {
       97: '',
