@@ -73,20 +73,8 @@ const config: MenuEntry[] = [
     icon: 'MoreIcon',
     items: [
       {
-        label: 'Roadmap',
-        href: 'https://github.com/rockswapfinance/',
-      },
-      {
-        label: 'FAQs',
-        href: 'https://github.com/rockswapfinance/',
-      },
-      {
         label: 'Github',
         href: 'https://github.com/rockswapfinance/',
-      },
-      {
-        label: 'Docs',
-        href: 'https://goosedefi.gitbook.io/goose-finance/',
       },
       {
         label: 'Blog',
