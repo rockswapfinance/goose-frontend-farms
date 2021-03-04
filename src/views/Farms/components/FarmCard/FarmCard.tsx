@@ -170,8 +170,8 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
         <Text bold>{earnLabel}</Text>
       </Flex>
       <Flex justifyContent="space-between">
-        <Text style={{ fontSize: '24px' }}>{TranslateString(10001, 'Deposit Fee')}:</Text>
-        <Text bold style={{ fontSize: '24px' }}>
+        <Text>{TranslateString(10001, 'Deposit Fee')}:</Text>
+        <Text bold>
           {farm.depositFeeBP / 100}%
         </Text>
       </Flex>

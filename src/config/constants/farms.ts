@@ -3,7 +3,7 @@ import { FarmConfig, QuoteToken } from './types'
 
 const farms: FarmConfig[] = [
   {
-    pid: 0,
+    pid: 4,
     risk: 5,
     lpSymbol: 'ROCK-BUSD LP',
     lpAddresses: {
@@ -19,7 +19,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 1,
+    pid: 3,
     risk: 5,
     lpSymbol: 'ROCK-BNB LP',
     lpAddresses: {
@@ -35,7 +35,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wbnb,
   },
   {
-    pid: 2,
+    pid: 5,
     risk: 3,
     lpSymbol: 'BNB-BUSD LP',
     lpAddresses: {
@@ -181,7 +181,7 @@ const farms: FarmConfig[] = [
   },
   */
   {
-    pid: 12,
+    pid: 0,
     risk: 5,
     isTokenOnly: true,
     lpSymbol: 'ROCK',
@@ -198,7 +198,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 13,
+    pid: 1,
     risk: 1,
     isTokenOnly: true,
     lpSymbol: 'BUSD',
@@ -209,13 +209,13 @@ const farms: FarmConfig[] = [
     tokenSymbol: 'BUSD',
     tokenAddresses: {
       97: '',
-      56: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
+      56: '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 14,
+    pid: 2,
     risk: 3,
     isTokenOnly: true,
     lpSymbol: 'WBNB',
