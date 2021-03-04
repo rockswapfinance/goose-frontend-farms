@@ -27,14 +27,14 @@ const CakeStats = () => {
   const totalSupply = useTotalSupply()
   const burnedBalance = useBurnedBalance(getCakeAddress())
   const farms = useFarms()
-  const eggPrice = usePriceCakeBusd()
+  const rockPrice = usePriceCakeBusd()
   const circSupply = totalSupply ? totalSupply.minus(burnedBalance) : new BigNumber(0)
   const cakeSupply = getBalanceNumber(circSupply)
-  const marketCap = eggPrice.times(circSupply)
+  const marketCap = rockPrice.times(circSupply)
 
-  let eggPerBlock = 0
-  if (farms && farms[0] && farms[0].eggPerBlock) {
-    eggPerBlock = new BigNumber(farms[0].eggPerBlock).div(new BigNumber(10).pow(18)).toNumber()
+  let rockPerBlock = 0
+  if (farms && farms[0] && farms[0].rockPerBlock) {
+    rockPerBlock = new BigNumber(farms[0].rockPerBlock).div(new BigNumber(10).pow(18)).toNumber()
   }
 
   return (
@@ -62,7 +62,7 @@ const CakeStats = () => {
         <Row>
           <Text fontSize="14px">New ROCK/block</Text>
           <Text bold fontSize="14px">
-            {eggPerBlock}
+            {rockPerBlock}
           </Text>
         </Row>
       </CardBody>
